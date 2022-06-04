@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App de Gastos</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    
+    <h2>App Created for Costs</h2>
+    <p>Femenia Correa Ignacio Joaquin</p>
+<div class="appgastos">
+    <div class="flex-container">
+      <div class="flex-item">
+        <h2>Add Username and Amount</h2>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">@</span>
+        <input
+          class="addPeople"
+          type="text"
+          id="nombre"
+          placeholder="Username"
+          aria-label="Username"
+          aria-describedby="addon-wrapping"
+        />
+      </div>
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">$</span>
+        <input
+          class="addPeople"
+          type="number"
+          id="monto"
+          placeholder="Amount"
+          aria-label="Username"
+          aria-describedby="addon-wrapping"
+        />
+      
+     
+    </div> 
+    <div>
+    <button id="btn-add" onclick="Agregar(nombre.value, monto.value)">
+        Add
+      </button>
+    </div>
+    <div class="flex-container" id="datos"></div>
+    <div class="flex-container" id="total"></div>
+    <div class="flex-container3">
+      <div class="flex-item">
+        How much people?
+      </div>
+    
+      <input class="division-gente" type="number" id="cantidad" placeholder="Dividide :" />
+      <button id="btn-add" onclick="Recalcular(cantidad.value)">
+        Recalculate
+      </button> 
+    </div>
+    <div class="flex-container" >
+      <button type="button"  class="btn btn-warning" onclick="BorrarUno()">ELIMINATE</button>
+    </div>
+</div>
+<script src="main.js"></script>
+  </body>
+</html>
